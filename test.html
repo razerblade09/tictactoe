@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<title> Tic Tac Toe</title>
+<body>
+    <div id="adver" class="adver">
+        <p>Fastest to solve rubiks and pyraminx wins cash prize</p>
+    </div>
+    <p>Fastest to solve rubiks & pyraminx wins cash prize!</p>
+    <button id="refreshButton">Play Again</button>
+    <div id="message" class="centered-message"></div>
+    <div id="credits" class="credits">
+        <p>Created by: Aaron Vargas</p>
+        <p>Music/Bgm by: Cusi Guevarra</p>
+    </div>
+    <script src="rainfall.js"></script>
+    <script src="minimax.js"></script>
+    <script src="sketch.js"></script>
+
+    <h1>
+        <span>T</span>
+        <span>i</i></span>
+        <span>c</span>
+        <span>T</span>
+        <span>a</span>
+        <span>c</span>
+        <span>T</span>
+        <span>o</span>
+        <span>e</span>
+    </h1>
+    <div class="block glow"></div>
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popup-message"></span>
+            <button id="Close">Close</button>
+            
+        </div>
+    </div>
+
+    <audio id="background-music" autoplay loop controls>
+        <source src="cuzi-L3v3L UP.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <audio id="ding-sound">
+        <source src="ding.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+      
+    
+</body>
+</html>

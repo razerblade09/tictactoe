@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*.alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 1000; 
+}
+*/
+
+body
+{
+    background: #000;
+    overflow: hidden;
+    height: 100vh;
+    font-family: "Luckiest Guy", cursive;
+    -webkit-font-smoothing: antialiased;
+}
+i
+{
+    position: absolute;
+    height: 200px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: animate 5s linear infinite;
+}
+i:nth-child(3n+1)
+{
+    background: linear-gradient(transparent,#fff);
+}
+i:nth-child(3n+2)
+{
+    background: linear-gradient(transparent,#0f0);
+}
+i:nth-child(3n+3)
+{
+    background: linear-gradient(transparent,#f00);
+}
+i:nth-child(3n+4)
+{
+    background: linear-gradient(transparent,#0000FF);
+}
+i:nth-child(3n+5)
+{
+    background: linear-gradient(transparent,#FFD700);
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(-200px);
+
+    }
+    100%
+    {
+        transform: translateY(calc(100vh + 200px));
+    }
+}
+.p5Canvas {
+    z-index: 10;
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+}
+#refreshButton {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%);
+    background-color: #3498db; /* Button background color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove button border */
+    padding: 25px 25px; /* Adjust padding for button size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px;
+}
+#refreshButton:hover {
+    background-color: #2980b9; /* Button background color on hover */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Close {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#Close:hover {
+    background-color: #2980b9;
+}
+
+#background-music::-webkit-media-controls {
+    display: none !important;
+  }
+  
+  #background-music::-webkit-media-controls-enclosure {
+    display: none !important;
+  }
+  
+  #background-music::-webkit-media-controls-panel {
+    display: none !important;
+  }
+  
+  #background-music::-webkit-media-controls-play-button,
+  #background-music::-webkit-media-controls-mute-button {
+    display: none !important;
+  }
+
+/*jump*/
+
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+
+h1
+{
+    cursor: default;
+    position: relative;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+h1 span
+{
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    -webkit-animation: bounce 0.3s ease infinite alternate;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 span:nth-child(2){
+    -webkit-animation-delay: 0.1s;
+}
+h1 span:nth-child(3){
+    -webkit-animation-delay: 0.2s;
+}
+h1 span:nth-child(4){
+    -webkit-animation-delay: 0.3s;
+}
+h1 span:nth-child(5){
+    -webkit-animation-delay: 0.4s;
+}
+h1 span:nth-child(6){
+    -webkit-animation-delay: 0.5s;
+}
+h1 span:nth-child(7){
+    -webkit-animation-delay: 0.6s;
+}
+h1 span:nth-child(8){
+    -webkit-animation-delay: 0.2s;
+}
+h1 span:nth-child(9){
+    -webkit-animation-delay: 0.3s;
+}
+h1 span:nth-child(10){
+    -webkit-animation-delay: 0.4s;
+}
+h1 span:nth-child(11){
+    -webkit-animation-delay: 0.5s;
+}
+h1 span:nth-child(12){
+    -webkit-animation-delay: 0.6s;
+}
+h1 span:nth-child(13){
+    -webkit-animation-delay: 0.7s;
+}
+
+@-webkit-keyframes bounce{
+    100%{
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/*resolution*/
+.container {
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
+  }
+  @media (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px */
+    .container {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for screens with a maximum width of 480px (typically mobile) */
+    .container {
+      width: 100%;
+    }
+  }
+
+.credits {
+    font-family: "Luckiest Guy", cursive; /* Use the same font as the message pop-up box */
+    text-align: center;
+    color: white; /* Set the text color to white or the desired color */
+}
+#credits {
+    text-align: center;
+    position: absolute;
+    top: calc(100% - 150px); /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Luckiest Guy", cursive;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*border*/
+.block{
+    position: relative;
+    margin: 6.2% auto 0;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(0deg, black,rgb(44,43,43));
+}
+
+.glow::before, .glow::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00FF66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate1  20s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.glow::after{
+    filter: blur(40px);
+    opacity: 0.99;
+}
+
+.adver {
+    font-family: "Luckiest Guy", cursive; /* Use the same font as the message pop-up box */
+    text-align: center;
+    color: white; /* Set the text color to white or the desired color */
+}
+#adver {
+    text-align: center;
+    position: absolute;
+    top: calc(100% - 300px); /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Luckiest Guy", cursive;
+    -webkit-font-smoothing: antialiased;
+}
+
