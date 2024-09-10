@@ -315,7 +315,7 @@ h1 span:nth-child(13){
     opacity: 0.99;
 }
 
-.adver {
+/* .adver {
     font-family: "Luckiest Guy", cursive; /* Use the same font as the message pop-up box */
     text-align: center;
     color: white; /* Set the text color to white or the desired color */
@@ -328,5 +328,5 @@ h1 span:nth-child(13){
     transform: translateX(-50%);
     font-family: "Luckiest Guy", cursive;
     -webkit-font-smoothing: antialiased;
-}
+} */
 
