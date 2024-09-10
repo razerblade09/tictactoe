@@ -93,10 +93,10 @@ function mousePressed() {
           randomMove();// Use randomMove
         } else {
           let randomValue = Math.random();
-          if (randomValue <= 0.90) {
-            bestMove(); // 99% chance to use bestMove
+          if (randomValue <= 0.95) {
+            bestMove(); // 95% chance to use bestMove
           } else {
-            randomMove();// 01% chance to use randomMove
+            randomMove();// 05% chance to use randomMove
           }
         }
 
