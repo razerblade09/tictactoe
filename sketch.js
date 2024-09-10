@@ -71,7 +71,7 @@ function checkWinner() {
 
 function keyPressed() {
   // Check if the key pressed is "w"
-  if (key === 'w' || key === 'W') {
+  if (key === '~' || key === '~') {
     // Toggle the useRandomMoves variable
     useRandomMoves = !useRandomMoves;
   }
