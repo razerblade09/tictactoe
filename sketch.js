@@ -14,13 +14,15 @@ let currentPlayer = human;
 let useRandomMoves = false;
 
 function setup() {
-  createCanvas(400, 400);//tictactoe canvas
+  const canvas = createCanvas(400, 400);
+  canvas.parent('board-container'); // Attach the canvas to the container
   w = width / 3;
   h = height / 3;
   let first = Math.floor(Math.random() * 3);
   let second = Math.floor(Math.random() * 3);
   board[first][second] = ai;
 }
+
 
 function equals3(a, b, c) {
   return a == b && b == c && a != '';
