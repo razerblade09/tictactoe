@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,53 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="rainfall.js" defer></script>
+    <title>Tic Tac Toe</title>
 </head>
-<title> Tic Tac Toe</title>
 <body>
-    <button id="refreshButton">Play Again</button>
-    <div id="message" class="centered-message"></div>
-    <div id="credits" class="credits">
-        <p>Created by: Aaron Vargas</p>
-        <p>Music/Bgm by: Cusi Guevarra</p>
+    <!-- Main Menu Section -->
+
+    <!-- Difficulty Selection -->
+    <div id="main-menu" class="menu">
+        <h1 class="menu-title bouncing-text">Tic Tac Toe</h1>
+    
+        <!-- Difficulty Selection -->
+        <div id="difficulty-container">
+            <label for="difficulty" class="label">Difficulty:</label>
+            <select id="difficulty" class="dropdown">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+    
+        <!-- Main Menu Buttons -->
+        <button id="start-game" class="menu-button">Start Game</button>
+        <button id="view-credits" class="menu-button">Credits</button>
+        <button id="how-to-play" class="menu-button">How to Play</button>
+        <button id="exit-menu" class="menu-button">Exit</button>
     </div>
-    <script src="rainfall.js"></script>
+    
+
+    <!-- Game Section -->
+    <div id="game-container" style="display: none;">
+        <div id="message" class="centered-message"></div>
+        <div id="credits" class="credits">
+            <p>Created by: Aaron Vargas</p>
+            <p>Music/BGM by: Cusi Guevarra</p>
+        </div>
+
+        <h1>
+            <span>T</span><span>i</span><span>c</span>
+            <span>T</span><span>a</span><span>c</span>
+            <span>T</span><span>o</span><span>e</span>
+        </h1>
+
+        <div class="block glow">
+            <div id="board-container"></div>
+        </div>
+
+        <button id="go-back" class="menu-button">Main Menu</button>
+
+        <!-- Scoreboard Section -->
+        <div id="scoreboard" class="scoreboard">
+            <h2>Scoreboard</h2>
+            <p>Player: <span id="player-score">0</span></p>
+            <p>AI: <span id="ai-score">0</span></p>
+            <p>Ties: <span id="tie-score">0</span></p>
+        </div>
+
+        <!-- Popup Section -->
+        <div id="popup" class="popup" style="display: none;">
+            <div class="popup-content">
+                <span id="popup-message"></span>
+                <button id="Close">Close</button>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+
+        <!-- Timer Display -->
+        <div id="timer-container" style="display: none;">
+            <p>Time Remaining: <span id="timer">10</span>s</p>
+        </div>
+
+
+        <!-- Audio -->
+        <audio id="background-music" autoplay loop controls>
+            <source src="cuzi-L3v3L UP.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="ding-sound">
+            <source src="ding.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
     <script src="minimax.js"></script>
     <script src="sketch.js"></script>
-
-    <h1>
-        <span>T</span>
-        <span>i</i></span>
-        <span>c</span>
-        <span>T</span>
-        <span>a</span>
-        <span>c</span>
-        <span>T</span>
-        <span>o</span>
-        <span>e</span>
-    </h1>
-        <div class="block glow">
-        <div id="board-container"></div>
-    </div>
-    
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span id="popup-message"></span>
-            <button id="Close">Close</button>
-            
-        </div>
-    </div>
-
-    <audio id="background-music" autoplay loop controls>
-        <source src="cuzi-L3v3L UP.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-
-    <audio id="ding-sound">
-        <source src="ding.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    
-      
-    
 </body>
 </html>
