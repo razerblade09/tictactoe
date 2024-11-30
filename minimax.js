@@ -67,6 +67,8 @@ function minimax(board, depth, isMaximizing) {
 }
 
 function randomMove() {
+  resetTimer();
+  startTimer();
   // AI to make a random move
   let availableSpots = [];
 
